@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat Bot User Interface</title>
+         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+		<script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+		<script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+		<script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+		<script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+		<script type="text/javascript" src="lib/url-template/url-template.js"></script>
+		<script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+		<script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+		<script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+		<script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+		<script type="text/javascript" src="apigClient.js"></script>
+
+    </head>
+
+    <body>
+        
+        <div class="headerBar">
+                <div class="user-photo"><img src="Images/ana.JPG"></div>
+                <p class="title">Chatbot</p>
+        </div>
+        
+        <div class="chatbox">
+
+            <div class="chatlogs">
+            
+                <div class="chat friend">
+                    <div class="user-photo"><img src="Images/ana.JPG"></div>
+                    <p class="chat-message">Hello!</p>
+                </div>
+
+                <div class="chat friend" id="loadingGif" style="display: none;">
+                    <div class="user-photo"><img src="Images/ana.JPG"></div>
+                    <div class="gif"><img src="Images/loading.gif"></div>
+                </div>
+
+            </div>            
+        </div>
+        <div class="chat-form">
+            <div id="inputDiv">
+                <div id="buttonDiv"></div>
+                <textarea class="input" placeholder="Message" rows="1" data-min-rows='1'></textarea>
+            </div>
+            <div id="chat-form-buttons">
+                <input type ="image"id="rec" src="Images/microphone.png">
+                <input type="image" src="Images/keyboard.png" id="switchInputType"/>
+            </div>
+        </div>
+        
+
+        <script type="text/javascript" src="index.js"></script>  
+    </body>
+
+</html>
